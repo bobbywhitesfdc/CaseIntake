@@ -1,0 +1,15 @@
+{
+  "orgName": "bobby.white company",
+  "edition": "Developer",
+  "features": ["EnableSetPasswordInApi"
+    ,"ServiceCloudVoicePartnerTelephony:5"
+    ,"ServiceCloud"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}

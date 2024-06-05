@@ -1,0 +1,53 @@
+<!--
+     All sections and items whose name value begins with "req" are
+     required in a valid call center definition file. The sortOrder
+     and label attributes can be changed for all required sections
+     and items except reqGeneralInfo, reqInternalName, and
+     reqDisplayName, in which only the label attribute can be altered.
+
+	  Note that the value for the reqInternalName item is limited to
+     40 alphanumeric characters and must start with an alphabetic
+     character. reqInternalName must be unique for all call centers
+     that you define.
+-->
+
+<callCenter>
+
+<section sortOrder="0" name="reqGeneralInfo" label="General Info">
+   <item sortOrder="0" name="reqInternalName"
+         label="Internal Name">callCenter001</item>
+   <item sortOrder="1" name="reqDisplayName"
+         label="Display Name">My Call Center</item>
+   <item sortOrder="2" name="reqDescription"
+         label="Description">Located in San Francisco, CA</item>
+	<item sortOrder="3" name="reqProgId"
+         label="CTI Connector ProgId">MyAdapter.MyAdapter.1</item>
+	<item sortOrder="4" name="reqVersion" 
+         label="Version">4.0</item>
+	<item sortOrder="5" name="reqAdapterUrl" 
+         label="CTI Adapter URL">http://localhost:11000</item>
+</section>
+
+<section sortOrder="1" name="ServerInfo" label="CTI Server Info">
+   <item sortOrder="0" name="HostA"
+         label="Host A">Host A</item>
+   <item sortOrder="1" name="PortA"
+         label="Port A">Port A</item>
+   <item sortOrder="2" name="HostB"
+         label="Host B">Host B</item>
+   <item sortOrder="3" name="PortB"
+         label="Port B">Port B</item>
+   <item sortOrder="4" name="PeripheralID"
+         label="Peripheral ID">1000</item>
+</section>
+
+<section sortOrder="2" name="DialingOptions" label="Dialing Options">
+   <item sortOrder="0" name="OutsidePrefix"
+         label="Outside Prefix">1</item>
+   <item sortOrder="1" name="LongDistPrefix"
+         label="Long Distance Prefix">9</item>
+   <item sortOrder="2" name="InternationalPrefix"
+         label="International Prefix">01</item>
+</section>
+
+</callCenter>
