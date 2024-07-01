@@ -1,0 +1,14 @@
+{
+  "vendorCallKey": "5324881f-1e84-4367-8930-f69a74b30ca6",
+  "callCenterApiName": "HVCC",
+  "to": "8002345678",
+  "from": "4081456688",
+  "initiationMethod": "Inbound",
+  "startTime": "2020-07-13T11:43:01Z",
+  "participants": [
+    {
+      "participantKey": "+18033568299",
+      "type": "END_USER"
+    }
+  ]
+}

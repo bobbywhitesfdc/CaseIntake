@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ParticleReference__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>ParticleReference</label>
+    <metadataRelationshipControllingField>GuidedFlowMapper__mdt.ReferencedEntity__c</metadataRelationshipControllingField>
+    <referenceTo>EntityParticle</referenceTo>
+    <relationshipLabel>Guided_Flow_Maps</relationshipLabel>
+    <relationshipName>Guided_Flow_Maps</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

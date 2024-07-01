@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OriginatingVoiceCall3__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Voice Call that created this case</description>
+    <externalId>false</externalId>
+    <label>Originating Voice Call3</label>
+    <referenceTo>Voicecall3__c</referenceTo>
+    <relationshipLabel>Primary Cases</relationshipLabel>
+    <relationshipName>PrimaryCases</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
