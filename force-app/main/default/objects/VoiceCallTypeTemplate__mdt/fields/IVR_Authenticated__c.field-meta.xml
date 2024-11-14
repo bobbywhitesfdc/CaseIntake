@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IVR_Authenticated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Has the caller been authenticated in the IVR?</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>IVR Authenticated</label>
+    <type>Checkbox</type>
+</CustomField>

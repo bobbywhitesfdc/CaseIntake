@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>308 Inbound Authenticated</label>
+    <protected>false</protected>
+    <values>
+        <field>Branch__c</field>
+        <value xsi:type="xsd:string">FOOBAR</value>
+    </values>
+    <values>
+        <field>CallType__c</field>
+        <value xsi:type="xsd:string">Inbound</value>
+    </values>
+    <values>
+        <field>FromPhone__c</field>
+        <value xsi:type="xsd:string">(704) 555-1212</value>
+    </values>
+    <values>
+        <field>IVR_Authenticated__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>IVR_Caller_Identified__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>IVR_Company_Code__c</field>
+        <value xsi:type="xsd:string">A123456</value>
+    </values>
+    <values>
+        <field>IVR_Contact_External_Id__c</field>
+        <value xsi:type="xsd:string">C123456</value>
+    </values>
+    <values>
+        <field>ToPhone__c</field>
+        <value xsi:type="xsd:string">(800) 667-6389</value>
+    </values>
+</CustomMetadata>
