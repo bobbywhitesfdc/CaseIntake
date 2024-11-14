@@ -8,4 +8,7 @@ function prop {
 #create scratch org
 # let it auto-assign the username ( username="$(prop 'user.admin' )" )
 sfdx force:org:create -f config/project-scratch-def.json -s -a CASEMODEL  --durationdays 28
+sf package install --package 04t5e000000aVeP
+
 sfdx force:source:push
+

@@ -3,13 +3,16 @@
   "edition": "Developer",
   "features": ["EnableSetPasswordInApi"
     ,"ServiceCloudVoicePartnerTelephony:5"
-    ,"ServiceCloud"],
+    ,"ServiceCloud", "ExternalClientApps", "ExtlClntAppSecretExposeCtl"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
+    },
+    "externalClientAppSettings": {
+      "enableExternalClientApps": true 
     }
   }
 }

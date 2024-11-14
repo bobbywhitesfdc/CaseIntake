@@ -7,6 +7,6 @@
   ],
   "name": "CaseModel",
   "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "59.0"
+  "sfdcLoginUrl": "https://momentum-java-3032-dev-ed.scratch.my.salesforce.com",
+  "sourceApiVersion": "61.0"
 }
