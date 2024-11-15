@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enterprise_Voice_Call_Record_Type</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>ADP_Voice_Call_Compact_Layout</compactLayoutAssignment>
+    <description>Base Record Type for all Enterprise Voice Calls; to be used as a &quot;master template&quot; if necessary.</description>
+    <label>Enterprise Voice Call Record Type</label>
+    <picklistValues>
+        <picklist>CallResolution</picklist>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Call_Flow__c</picklist>
+        <values>
+            <fullName>IVR Contained Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Original Inbound</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Original Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repeat Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repeat Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolution Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Untracked Outbound</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Visibility_Restriction__c</picklist>
+        <values>
+            <fullName>ADP Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benefits Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canadian Restricted Clients</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foundever Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payroll Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SBS IS Health and Benefits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SBS IS Property and Casualty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undetermined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wisely</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wisely ADP Corporate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

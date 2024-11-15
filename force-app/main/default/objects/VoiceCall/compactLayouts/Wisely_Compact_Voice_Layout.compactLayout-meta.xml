@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wisely_Compact_Voice_Layout</fullName>
+    <fields>Account_for_Voice_Call__c</fields>
+    <fields>IVR_Auth_Status__c</fields>
+    <fields>Number_Verified__c</fields>
+    <fields>GC_IVR_PreAuth__c</fields>
+    <fields>GC_Menu_Selected__c</fields>
+    <fields>GC_IVR_Language__c</fields>
+    <label>Wisely Compact Voice Layout</label>
+</CompactLayout>

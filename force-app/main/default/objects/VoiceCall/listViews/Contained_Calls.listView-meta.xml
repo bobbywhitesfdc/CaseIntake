@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contained_Calls</fullName>
+    <columns>Name</columns>
+    <columns>CallStartDateTime</columns>
+    <columns>FromPhoneNumber</columns>
+    <columns>Account_for_Contained_Call__c</columns>
+    <columns>Account_for_Voice_Call__c</columns>
+    <columns>GC_IVR_PreAuth__c</columns>
+    <columns>GC_Menu_Selected__c</columns>
+    <columns>IVR_Auth_Status__c</columns>
+    <columns>GC_IVR_Language__c</columns>
+    <columns>GC_Message__c</columns>
+    <columns>GC_Authentication_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Call_Flow__c</field>
+        <operation>equals</operation>
+        <value>IVR Contained Call</value>
+    </filters>
+    <label>Contained Calls</label>
+</ListView>

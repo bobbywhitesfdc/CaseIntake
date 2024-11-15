@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Call_Flow__c</fullName>
+    <defaultValue>&apos;Original Inbound&apos;</defaultValue>
+    <label>Flow</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Original Inbound</fullName>
+                <default>false</default>
+                <label>Original Inbound</label>
+            </value>
+            <value>
+                <fullName>Original Outbound</fullName>
+                <default>false</default>
+                <label>Original Outbound</label>
+            </value>
+            <value>
+                <fullName>Repeat Inbound</fullName>
+                <default>false</default>
+                <label>Repeat Inbound</label>
+            </value>
+            <value>
+                <fullName>Resolution Outbound</fullName>
+                <default>false</default>
+                <label>Resolution Outbound</label>
+            </value>
+            <value>
+                <fullName>Transfer</fullName>
+                <default>false</default>
+                <label>Transfer</label>
+            </value>
+            <value>
+                <fullName>IVR Contained Call</fullName>
+                <default>false</default>
+                <label>IVR Contained Call</label>
+            </value>
+            <value>
+                <fullName>Repeat Outbound</fullName>
+                <default>false</default>
+                <label>Repeat Outbound</label>
+            </value>
+            <value>
+                <fullName>Untracked Outbound</fullName>
+                <default>false</default>
+                <label>Untracked Outbound</label>
+            </value>
+            <value>
+                <fullName>$Label.Original_Inbound</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>$Label.Original_Inbound</label>
+            </value>
+            <value>
+                <fullName>$Label.Original_Outbound</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>$Label.Original_Outbound</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

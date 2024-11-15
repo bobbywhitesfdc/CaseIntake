@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IVR_Authentication__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( IVR_AUTHENTICATED__c = &apos;Yes&apos;, 
+IMAGE(&quot;/resource/1682974595000/PassPill&quot;,&quot;y&quot;,35,55) + GC_IVR_Authentication_Type__c ,
+IMAGE(&quot;/resource/1682976989000/FailPill&quot;,&quot;n&quot;, 35,55))</formula>
+    <label>IVR Authentication</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

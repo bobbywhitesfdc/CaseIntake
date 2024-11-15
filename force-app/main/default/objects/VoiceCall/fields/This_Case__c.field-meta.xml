@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>This_Case__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The current case or the original case associated with this voice call on initial dial-in</description>
+    <label>Original Case</label>
+    <referenceTo>Case</referenceTo>
+    <relationshipLabel>Voice Calls</relationshipLabel>
+    <relationshipName>Voice_Calls</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

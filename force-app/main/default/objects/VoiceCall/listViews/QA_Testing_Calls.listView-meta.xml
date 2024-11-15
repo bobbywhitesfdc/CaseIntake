@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QA_Testing_Calls</fullName>
+    <columns>Name</columns>
+    <columns>RelatedRecord</columns>
+    <columns>CallType</columns>
+    <columns>CallDisposition</columns>
+    <columns>This_Case__c</columns>
+    <columns>User</columns>
+    <columns>CallStartDateTime</columns>
+    <columns>CreatedDate</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>GC_Conversation_Id__c</columns>
+    <columns>VendorCallKey</columns>
+    <columns>GC_CardMemberID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>User</field>
+        <operation>equals</operation>
+        <value>Wilfred Mathews</value>
+    </filters>
+    <label>QA Testing Calls</label>
+</ListView>

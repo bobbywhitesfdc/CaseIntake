@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Voice_Calls_9_10</fullName>
+    <columns>Name</columns>
+    <columns>FromPhoneNumber</columns>
+    <columns>GC_Caller_Identified__c</columns>
+    <columns>IVR_AUTHENTICATED__c</columns>
+    <columns>GC_IVR_Authentication_Type__c</columns>
+    <columns>User</columns>
+    <columns>CRMAccountRowId__c</columns>
+    <columns>CRMContactRowId__c</columns>
+    <columns>GC_Branch_Code__c</columns>
+    <columns>GC_RUN_IID__c</columns>
+    <columns>GC_OOID__c</columns>
+    <columns>GC_Company_Code__c</columns>
+    <columns>GC_AOID__c</columns>
+    <columns>GC_Conversation_Id__c</columns>
+    <columns>CreatedDate</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CallStartDateTime</field>
+        <operation>greaterThan</operation>
+        <value>5/17/2024 10:21 PM</value>
+    </filters>
+    <filters>
+        <field>IVR_SFDC_Profile__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>CallType</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Voice Calls SBS Prod Night 5-18</label>
+</ListView>

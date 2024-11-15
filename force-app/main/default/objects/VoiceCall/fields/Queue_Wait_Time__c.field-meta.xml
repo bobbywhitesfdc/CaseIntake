@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Queue_Wait_Time__c</fullName>
+    <description>Calculates how long a caller has been in a VC Queue</description>
+    <externalId>false</externalId>
+    <formula>TEXT(IF(
+        GC_IVR_Opt_Out_Time__c = NULL, 0,
+        FLOOR(ABS(UNIXTIMESTAMP(DATETIMEVALUE(SUBSTITUTE(MID( GC_IVR_Opt_Out_Time__c, 0, 19), &apos;T&apos;, &apos; &apos;))) - UNIXTIMESTAMP(DATETIMEVALUE(CreatedDate)))/3600)
+)
+)
+ + &apos;h &apos; + 
+
+TEXT(IF(
+        GC_IVR_Opt_Out_Time__c = NULL, 0,
+        FLOOR(MOD(ABS(UNIXTIMESTAMP(DATETIMEVALUE(SUBSTITUTE(MID( GC_IVR_Opt_Out_Time__c, 0, 19), &apos;T&apos;, &apos; &apos;))) - UNIXTIMESTAMP(DATETIMEVALUE(CreatedDate))),3600)/60)
+)
+) 
+ + &apos;m &apos; +
+
+TEXT(IF(
+        GC_IVR_Opt_Out_Time__c = NULL, 0,
+        MOD(MOD(ABS(UNIXTIMESTAMP(DATETIMEVALUE(SUBSTITUTE(MID( GC_IVR_Opt_Out_Time__c, 0, 19), &apos;T&apos;, &apos; &apos;))) -
+        UNIXTIMESTAMP(DATETIMEVALUE(CreatedDate))),3600),60)
+
+)
+)
+ + &apos;s&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Queue Wait Time</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

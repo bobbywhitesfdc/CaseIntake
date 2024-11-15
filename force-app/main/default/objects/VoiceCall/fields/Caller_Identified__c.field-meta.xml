@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caller_Identified__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( GC_Caller_Identified__c  = &apos;Yes&apos;,
+IMAGE(&quot;/resource/1682974595000/PassPill&quot;,&quot;y&quot;,35,55) ,
+IMAGE(&quot;/resource/1682976989000/FailPill&quot;,&quot;n&quot;, 35,55))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Caller Identified</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

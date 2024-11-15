@@ -84,10 +84,6 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>OriginatingVoiceCall3__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>OriginatingChatSession__c</field>
             </layoutItems>
         </layoutColumns>
@@ -289,12 +285,6 @@
         <fields>CallOrigin</fields>
         <fields>QualityScore</fields>
         <relatedList>VoiceCall.PrimaryCase__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>CallStatus__c</fields>
-        <fields>CallStarted__c</fields>
-        <relatedList>Voicecall3__c.PrimaryCase__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>

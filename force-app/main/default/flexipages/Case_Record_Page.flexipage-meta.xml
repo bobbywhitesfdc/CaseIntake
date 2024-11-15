@@ -38,46 +38,6 @@
                 <identifier>forceChatter_recordFeedContainer</identifier>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>additionalMargin</name>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>configId</name>
-                    <value>1</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>headerIcon</name>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>headerTitle</name>
-                    <value>Interactions</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>noDataFoundWarnCss</name>
-                    <value>warning</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showButtons</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showExpandCollapse</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showHeader</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showSearch</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentName>timeline:activityTimeline</componentName>
-                <identifier>timeline_activityTimeline</identifier>
-            </componentInstance>
-        </itemInstances>
         <mode>Replace</mode>
         <name>feedTabContent</name>
         <type>Facet</type>

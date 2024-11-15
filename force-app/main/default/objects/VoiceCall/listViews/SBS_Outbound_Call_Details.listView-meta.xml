@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBS_Outbound_Call_Details</fullName>
+    <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9) and 10</booleanFilter>
+    <columns>Name</columns>
+    <columns>User</columns>
+    <columns>Caller_Number__c</columns>
+    <columns>Account_for_Voice_Call__c</columns>
+    <columns>CallStartDateTime</columns>
+    <columns>Call_Flow__c</columns>
+    <columns>RelatedRecord</columns>
+    <columns>CreatedDate</columns>
+    <columns>ToPhoneNumber</columns>
+    <columns>This_Case__c</columns>
+    <columns>IVR_SFDC_Profile__c</columns>
+    <columns>CallType</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>User</field>
+        <operation>equals</operation>
+        <value>Marissa Robinson</value>
+    </filters>
+    <filters>
+        <field>User</field>
+        <operation>equals</operation>
+        <value>Alissa DeCarlo</value>
+    </filters>
+    <filters>
+        <field>User</field>
+        <operation>contains</operation>
+        <value>Thaiany</value>
+    </filters>
+    <filters>
+        <field>User</field>
+        <operation>equals</operation>
+        <value>Richard Howard</value>
+    </filters>
+    <filters>
+        <field>User</field>
+        <operation>contains</operation>
+        <value>Samantha</value>
+    </filters>
+    <filters>
+        <field>User</field>
+        <operation>contains</operation>
+        <value>Nadiya</value>
+    </filters>
+    <filters>
+        <field>User</field>
+        <operation>equals</operation>
+        <value>Greg Leonard</value>
+    </filters>
+    <filters>
+        <field>User</field>
+        <operation>equals</operation>
+        <value>Natalie Gomez</value>
+    </filters>
+    <filters>
+        <field>User</field>
+        <operation>equals</operation>
+        <value>Ellie Kimbrell</value>
+    </filters>
+    <filters>
+        <field>CallType</field>
+        <operation>equals</operation>
+        <value>2</value>
+    </filters>
+    <label>SBS Outbound Call Details</label>
+</ListView>

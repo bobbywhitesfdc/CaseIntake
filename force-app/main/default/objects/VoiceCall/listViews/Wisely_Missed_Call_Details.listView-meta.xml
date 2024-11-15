@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wisely_Missed_Call_Details</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>Name</columns>
+    <columns>Account_for_Voice_Call__c</columns>
+    <columns>GC_Conversation_Id__c</columns>
+    <columns>CallType</columns>
+    <columns>CallDisposition</columns>
+    <columns>This_Case__c</columns>
+    <columns>User</columns>
+    <columns>GC_Menu_Selected__c</columns>
+    <columns>CallStartDateTime</columns>
+    <columns>Call_Flow__c</columns>
+    <columns>PreviousCall</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Call_Flow__c</field>
+        <operation>notEqual</operation>
+        <value>IVR Contained Call</value>
+    </filters>
+    <filters>
+        <field>CallStartDateTime</field>
+        <operation>greaterThan</operation>
+        <value>12/7/2023 8:00 AM</value>
+    </filters>
+    <filters>
+        <field>User</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Wisely Missed Call Details</label>
+</ListView>

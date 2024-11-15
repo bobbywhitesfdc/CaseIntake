@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inbound_Voice_Calls</fullName>
+    <columns>Name</columns>
+    <columns>Account_for_Voice_Call__c</columns>
+    <columns>FromPhoneNumber</columns>
+    <columns>CallStartDateTime</columns>
+    <columns>Owner</columns>
+    <columns>Call_Flow__c</columns>
+    <columns>MFA_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Call_Flow__c</field>
+        <operation>equals</operation>
+        <value>Original Inbound,Repeat Inbound</value>
+    </filters>
+    <label>Inbound Voice Calls</label>
+</ListView>
