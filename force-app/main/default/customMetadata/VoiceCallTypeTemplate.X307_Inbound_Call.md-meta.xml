@@ -31,6 +31,10 @@
         <value xsi:type="xsd:string">C123456</value>
     </values>
     <values>
+        <field>ScenarioNumber__c</field>
+        <value xsi:type="xsd:double">307.0</value>
+    </values>
+    <values>
         <field>ToPhone__c</field>
         <value xsi:type="xsd:string">(800) 667-6389</value>
     </values>

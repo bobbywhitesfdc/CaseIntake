@@ -1,8 +1,52 @@
 public class VCUtil {
+    public static VoiceCall scenario(integer scenario) {
+        List<VoiceCallTypeTemplate__mdt> configs = [select id, scenarioNumber__c, CallType__c, FromPhone__c, ToPhone__c
+                                                    , IVR_Caller_Identified__c, IVR_Authenticated__c
+                                                    , IVR_Company_Code__c, Branch__c, IVR_Contact_External_Id__c
+                                             from VoiceCallTypeTemplate__mdt
+                                             where ScenarioNumber__c = :scenario];
+        
+        if (configs.isEmpty()) {
+            System.Debug('Scenario not found: ' + scenario);
+            return null;
+        }
+        
+        VoiceCallTypeTemplate__mdt config = configs[0];
+        
+        VoiceCall myVC = new VoiceCall();
+        myVC.CallCenterId = VCUtil.getCallCenter(); 
+        myVC.CallType= config.CallType__c; 
+        myVC.CallDisposition = 'Connected';
+        myVC.FromPhoneNumber= config.FromPhone__c ;
+        myVC.VendorCallKey='123'+ System.now();
+        myVC.VendorType='ContactCenter';
+        myVC.ToPhoneNumber=config.ToPhone__c;
+        myVC.CallStartDateTime= Datetime.now()-300;
+        myVC.CallEndDateTime= Datetime.now();
+        // Custom fields
+        myVC.GC_Branch_Code__c  = config.Branch__c;
+        myVC.GC_Caller_Identified__c  = config.IVR_Caller_Identified__c.toString();
+        myVC.IVR_AUTHENTICATED__c  = config.IVR_Authenticated__c.toString();
+        myVC.GC_Company_Code__c = config.IVR_Company_Code__c;
+        myVC.GC_Client_Id__c = config.IVR_Contact_External_Id__c;
+        
+        insert myVC;
+        
+        System.debug('VoiceCall: ' + myVC);
+        return myVC;
+        
+    }
+    
+    private static Id getCallCenter() {
+        User runningUser = [select id, callCenterId From User where Id = :UserInfo.getUserId()];
+        return runningUser.callCenterId;
+    }
+    
     public static void createVC(final String fromNumber) {
         VoiceCall myVC = new VoiceCall();
-        myVC.CallCenterId = '04vDC000000Kz6lYAC';
+        //myVC.CallCenterId = '04vDC000000Kz6lYAC';
         myVC.CallType='Inbound';
+        myVC.CallDisposition = 'Connected';
         myVC.FromPhoneNumber= fromNumber;
         myVC.VendorCallKey='123'+ System.now();
         myVC.VendorType='ContactCenter';

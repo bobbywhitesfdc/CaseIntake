@@ -2,6 +2,7 @@
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Scenarios</fullName>
     <columns>MasterLabel</columns>
+    <columns>ScenarioNumber__c</columns>
     <columns>Branch__c</columns>
     <columns>CallType__c</columns>
     <columns>IVR_Caller_Identified__c</columns>

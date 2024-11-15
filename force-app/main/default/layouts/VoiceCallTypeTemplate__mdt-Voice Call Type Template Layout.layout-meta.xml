@@ -16,6 +16,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
+                <field>ScenarioNumber__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
                 <field>CallType__c</field>
             </layoutItems>
             <layoutItems>
@@ -94,7 +98,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00hDL000008LSz9</masterLabel>
+        <masterLabel>00hDK000003T4rl</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
