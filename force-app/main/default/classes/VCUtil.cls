@@ -10,8 +10,60 @@ public class VCUtil {
             System.Debug('Scenario not found: ' + scenario);
             return null;
         }
+                
+        return createVC(configs[0]);
+    }
+    
+    private static Id createAccount(final String companyCode) {
+        List<Account> theAccounts = [select id from Account 
+                                     Where IID__c = :companyCode 
+                                     LIMIT 1];  // Unique External ID
         
-        VoiceCallTypeTemplate__mdt config = configs[0];
+        Account result=null;
+        
+        if (theAccounts.isEmpty()) {
+            // Create it on the fly
+            //### TODO Ensure that it's owned by the integration user
+            result = new Account(IID__c=companyCode, name='Test Company: '+ companyCode);
+            insert result;
+            
+        } else {
+            result = theAccounts[0];
+        }
+        
+        
+        return result.Id;
+    }
+    
+     private static Id createContact(final Id acctId, final String contactExtId) {
+        List<Contact> theContacts = [select id, accountId from Contact 
+                                     Where UCM_Row_Id__c  = :contactExtId 
+                                     LIMIT 1];  // Unique External ID
+        
+        Contact result=null;
+        
+        
+        if (theContacts.isEmpty()) {
+            // Create it on the fly
+            //### TODO Ensure that it's owned by the integration user
+            result = new Contact(UCM_Row_Id__c=contactExtId
+                                 , AccountId=acctId
+                                 , FirstName='Test Contact: '+ contactExtId
+                                 , LastName='TestContactLastname');
+            insert result;
+            
+        } else {
+            result = theContacts[0];
+        }
+        
+        
+        return result.Id;
+    }
+
+    
+    private static VoiceCall createVC(final VoiceCallTypeTemplate__mdt config) { 
+        final Id acctId = createAccount(config.IVR_Company_Code__c);
+        final Id contactId = createContact(acctId,config.IVR_Contact_External_Id__c);
         
         VoiceCall myVC = new VoiceCall();
         myVC.CallCenterId = VCUtil.getCallCenter(); 
@@ -34,7 +86,6 @@ public class VCUtil {
         
         System.debug('VoiceCall: ' + myVC);
         return myVC;
-        
     }
     
     private static Id getCallCenter() {
