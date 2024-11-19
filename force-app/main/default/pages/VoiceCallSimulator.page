@@ -1,0 +1,25 @@
+<apex:page controller="VoiceCallTypeTemplateListController" >
+    <head>
+        <!-- This page is Scaffolding for testing VoiceCalls-->
+    </head>
+    <h1>
+        Voice Call Simulation Scaffolding
+    </h1>
+    <!--                     [select id, developername, scenarioNumber__c
+                     , CallType__c, FromPhone__c, ToPhone__c
+                     , IVR_Caller_Identified__c, IVR_Authenticated__c
+                     , IVR_Company_Code__c, Branch__c, IVR_Contact_External_Id__c
+                     FROM VoiceCallTypeTemplate__mdt Order By scenarioNumber__c]));
+-->
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!templates}" var="t">
+            <a href="{!t.id}"><apex:column value="{!t.ScenarioNumber__c}"/></a>
+            <apex:column value="{!t.developername}"/>
+            <apex:column value="{!t.CallType__c}"/>
+            <apex:column value="{!t.IVR_Caller_Identified__c}"/>
+            <apex:column value="{!t.IVR_Authenticated__c}"/>
+            <apex:column value="{!t.Branch__c}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+   
+</apex:page>
