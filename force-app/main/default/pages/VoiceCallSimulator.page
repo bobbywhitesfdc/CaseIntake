@@ -11,17 +11,6 @@
                      , IVR_Company_Code__c, Branch__c, IVR_Contact_External_Id__c
                      FROM VoiceCallTypeTemplate__mdt Order By scenarioNumber__c]));
 -->
-    <apex:pageBlock >
-        <apex:pageBlockTable value="{!templates}" var="t" id="pgblockTable">
-            <apex:column value="{!t.developername}"/>
-            <apex:column value="{!t.CallType__c}"/>
-            <apex:column value="{!t.IVR_Caller_Identified__c}"/>
-            <apex:column value="{!t.IVR_Authenticated__c}"/>
-            <apex:column value="{!t.Branch__c}"/>
-        </apex:pageBlockTable>
-    </apex:pageBlock>
-    
-    <br/>
     <apex:form >
         <table id="ScenarioTable2" border="1px solid black">
             <tr>
