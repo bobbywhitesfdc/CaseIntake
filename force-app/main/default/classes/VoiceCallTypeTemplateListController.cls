@@ -1,3 +1,6 @@
+/**
+ * Custom List Controller for VoiceCallTypeTemplate
+ **/ 
 public class VoiceCallTypeTemplateListController {
     // ApexPages.StandardSetController must be instantiated
     // for standard list controllers
@@ -19,9 +22,5 @@ public class VoiceCallTypeTemplateListController {
     // Initialize setCon and return a list of records
     public List<VoiceCallTypeTemplate__mdt> getTemplates() {
         return (List<VoiceCallTypeTemplate__mdt>) setCon.getRecords();
-    }
-    
-    public PageReference runScenario() {
-        return null;
     }
 }

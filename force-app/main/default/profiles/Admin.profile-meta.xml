@@ -9,6 +9,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>VoiceCallScenarioDetailController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>VoiceCallTypeTemplateListController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -551,6 +555,10 @@
         <object>ChatSession__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <pageAccesses>
+        <apexPage>VoiceCallScenarioDetail</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <pageAccesses>
         <apexPage>VoiceCallSimulator</apexPage>
         <enabled>true</enabled>

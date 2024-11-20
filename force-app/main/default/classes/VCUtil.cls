@@ -61,7 +61,7 @@ public class VCUtil {
     }
 
     
-    private static VoiceCall createVC(final VoiceCallTypeTemplate__mdt config) { 
+    public static VoiceCall createVC(final VoiceCallTypeTemplate__mdt config) { 
         final Id acctId = createAccount(config.IVR_Company_Code__c);
         final Id contactId = createContact(acctId,config.IVR_Contact_External_Id__c);
         

@@ -12,8 +12,7 @@
                      FROM VoiceCallTypeTemplate__mdt Order By scenarioNumber__c]));
 -->
     <apex:pageBlock >
-        <apex:pageBlockTable value="{!templates}" var="t">
-            <a href="{!t.id}"><apex:column value="{!t.ScenarioNumber__c}"/></a>
+        <apex:pageBlockTable value="{!templates}" var="t" id="pgblockTable">
             <apex:column value="{!t.developername}"/>
             <apex:column value="{!t.CallType__c}"/>
             <apex:column value="{!t.IVR_Caller_Identified__c}"/>
@@ -21,5 +20,28 @@
             <apex:column value="{!t.Branch__c}"/>
         </apex:pageBlockTable>
     </apex:pageBlock>
-   
+    
+    <br/>
+    <apex:form >
+        <table id="ScenarioTable2" border="1px solid black">
+            <tr>
+                <th>Scenario Number</th>
+                <th>Name</th>
+                <th>Call Type</th>
+                <th>Caller Identified</th>
+                <th>Caller Authenticated</th>
+                <th>Branch</th>
+            </tr>
+            <apex:repeat value="{!templates}" var="vct" id="theRepeat">    
+                <tr>
+                    <td><a href="{!$Page.VoiceCallScenarioDetail}?id={!vct.id}"><apex:outputText value="{!vct.ScenarioNumber__c}"/></a></td>    
+                    <td><apex:outputText value="{!vct.developername}" id="scenario"/></td>
+                    <td><apex:outputText value="{!vct.CallType__c}" id="calltype"/></td>
+                    <td><apex:outputText value="{!vct.IVR_Caller_Identified__c}"/></td>
+                    <td><apex:outputText value="{!vct.IVR_Authenticated__c}"/></td>
+                    <td><apex:outputText value="{!vct.Branch__c}"/></td> 
+                </tr>
+            </apex:repeat>
+        </table>
+    </apex:form>
 </apex:page>

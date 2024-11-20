@@ -1,0 +1,15 @@
+<apex:page controller="VoiceCallScenarioDetailController" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection title="VoiceCall Test Scenario Information">
+                <apex:commandButton action="{!execute}" value="Execute" id="Execute"/>
+                <apex:outputField value="{!template.ScenarioNumber__c}"/>    
+                <apex:outputField value="{!template.developername}" id="scenario"/>
+                <apex:outputField value="{!template.CallType__c}" id="calltype"/>
+                <apex:outputField value="{!template.IVR_Caller_Identified__c}"/>
+                <apex:outputField value="{!template.IVR_Authenticated__c}"/>
+                <apex:outputField value="{!template.Branch__c}"/>           
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
